@@ -5,10 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
 
-    <h2>Jugendapp - was wollt ihr?</h2>
+    <style>
+
+        /*** Font ***/
+
+        @font-face { font-family: Montserrat; src: url(../font/Montserrat-VariableFont_wght.ttf); }
+
+        * {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: var(--text-color);
+        }
+
+        /*** General **/
+        html,body {
+        height: 100%;
+        margin: 0px;
+        }
+
+
+        /*** Animations ***/
+
+        .background {
+            background: linear-gradient(217deg, rgba(90, 212, 254, 1), rgba(90, 212, 254, 0.1) 70.71%),
+                        linear-gradient(127deg, rgba(223, 117, 183, 1), rgba(223, 117, 183, 0.1) 70.71%),
+                        linear-gradient(127deg, rgba(255, 225, 165, 1), rgba(255, 225, 165, 0.1) 70.71%),
+                        linear-gradient(336deg, rgba(255, 192, 176, 1), rgba(255, 192, 176, 0.1) 70.71%);
+            height: 100%;
+        }
+
+        .title {
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translateX(-50%) translateY(-50%);
+
+            font-size: 3vw;
+            font-weight: 600;
+        }
+
+    </style>
+
+</head>
+<body class="background">
+
+    <h2 class="title">Jugendapp - was wollt ihr?</h2>
     
 </body>
 </html>
