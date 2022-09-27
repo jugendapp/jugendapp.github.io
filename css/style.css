@@ -23,6 +23,7 @@ html,body {
                 linear-gradient(127deg, rgba(255, 225, 165, 1), rgba(255, 225, 165, 0.5) 70.71%),
                 linear-gradient(336deg, rgba(255, 192, 176, 1), rgba(255, 192, 176, 0.5) 70.71%);
     height: 100%;
+    width: 100%;
     background-size: 200% 200%;
     animation-name: gradient;
     animation-duration: 15s;
@@ -80,7 +81,7 @@ html,body {
 
     text-align: center;
 
-    font-size: 3vw;
+    font-size: 3vh;
     font-weight: 600;
 
     margin: 0;
