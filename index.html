@@ -6,70 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jugendapp</title>
 
-    <style>
-
-        /*** Font ***/
-
-        @font-face { font-family: Montserrat; src: url(../font/Montserrat-VariableFont_wght.ttf); }
-
-        * {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        color: var(--text-color);
-        }
-
-        /*** General **/
-        html,body {
-            height: 100%;
-            margin: 0px;
-            }
-
-
-        /*** Animations ***/
-
-        .background {
-            background: linear-gradient(217deg, rgba(90, 212, 254, 1), rgba(90, 212, 254, 0.1) 70.71%),
-                        linear-gradient(127deg, rgba(223, 117, 183, 1), rgba(223, 117, 183, 0.1) 70.71%),
-                        linear-gradient(127deg, rgba(255, 225, 165, 1), rgba(255, 225, 165, 0.1) 70.71%),
-                        linear-gradient(336deg, rgba(255, 192, 176, 1), rgba(255, 192, 176, 0.1) 70.71%);
-            height: 100%;
-            background-size: 200% 200%;
-            animation-name: gradient;
-            animation-duration: 30s;
-            animation-timing-function: ease;
-            animation-iteration-count: infinite;
-            background-attachment: fixed;
-        }
-
-        @keyframes gradient {
-
-            0%  {background-position: 0% 0%;}
-            25%  {background-position: 100% 0%;}
-            50%   {background-position: 100% 100%;}
-            75%  {background-position: 0% 100%;}
-            100%  {background-position: 0% 0%;}
-        }
-
-        .title {
-            position: absolute;
-
-            top: 50%;
-            left: 50%;
-
-            transform: translateX(-50%) translateY(-50%);
-
-            font-size: 3vw;
-            font-weight: 600;
-
-            margin: 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body class="background">
 
-    <h2 class="title">Jugendapp - was wollt ihr?</h2>
+    <!-- <div class="navbar-grid">
+
+        <a href="#title" class="nav-main">Jugendapp</a>
+
+        <a href="#2" class="nav-sub">3</a>
+        <a href="#3" class="nav-sub">2</a>
+        <a href="#1" class="nav-sub">1</a>
+
+    </div> -->
+
+    <div class="title-div" id="title">
+
+        <h2 class="title-font">Jugendapp - was wollt ihr?</h2>
+
+    </div>
+
+    <div class="content-grid">
+
+        <div class="text-grid"  id="zukunft">
+
+            <p class="grid-text-header">Documenta-Stadt - In Zukunft auch Jugendstadt!</p>
+
+            <p class="grid-text-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid necessitatibus, nisi pariatur similique omnis perspiciatis odio deserunt eveniet vel rerum numquam magni sequi! Ea quam, alias voluptate facilis nisi ad.</p>
+
+        </div>
+
+        <div class="grid-item-picture">
+
+            <img src="./src/IMG_20220831_140336.jpg" alt="test" class="grid-picture-picture">
+
+        </div>
+
+        <div class="grid-item-picture">
+
+            <img src="./src/IMG_20220831_140751.jpg" alt="test" class="grid-picture-picture">
+            
+        </div>
+
+        <div class="text-grid"  id="vonfuer">
+
+            <p class="grid-text-header">Von Jugendlichen für Jugendliche</p>
+
+            <p class="grid-text-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid necessitatibus, nisi pariatur similique omnis perspiciatis odio deserunt eveniet vel rerum numquam magni sequi! Ea quam, alias voluptate facilis nisi ad.</p>
+
+        </div>
+
+        <div class="text-grid" id="team">
+
+            <p class="grid-text-header">Team</p>
+
+            <p class="grid-text-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid necessitatibus, nisi pariatur similique omnis perspiciatis odio deserunt eveniet vel rerum numquam magni sequi! Ea quam, alias voluptate facilis nisi ad.</p>
+
+        </div>
+
+        <div class="grid-item-picture">
+
+            <img src="./src/IMG_20220831_141702.jpg" alt="test" class="grid-picture-picture">
+            
+        </div>
+
+        <div class="grid-item-picture">
+
+            <img src="./src/IMG_20220831_152507.jpg" alt="test" class="grid-picture-picture">
+            
+        </div>
+
+        <div class="text-grid"  id="kontakt">
+
+            <p class="grid-text-header">Kontakt</p>
+
+            <p class="grid-text-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid necessitatibus, nisi pariatur similique omnis perspiciatis odio deserunt eveniet vel rerum numquam magni sequi! Ea quam, alias voluptate facilis nisi ad.</p>
+
+        </div>
+
+    </div>
+
+    <div class="credit">
+
+        <p>Website von Ben Reichel</p>
+
+    </div>
     
 </body>
 </html>
