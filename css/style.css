@@ -90,13 +90,26 @@ html,body {
 
 
 /*** content ***/
-.content-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
+@media screen and (orientation: landscape) {
+    .content-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    
+        align-items: center;
+    
+    }
+}
 
-    align-items: center;
-
+@media screen and (orientation: portrait) {
+    .content-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+    
+        align-items: center;
+    
+    }
 }
 
 .text-grid {
